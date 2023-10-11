@@ -1,0 +1,241 @@
+/* Reset elemen bawaan browser */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk latar belakang seluruh halaman */
+body {
+    background-image: url('gmbr pes.jpg'); /* Ganti dengan URL gambar latar belakang Anda */
+    background-size: cover;
+    color: #fff; /* Warna teks putih */
+    font-family: Arial, sans-serif;
+}
+
+
+#popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+    }
+     
+    .window {
+    width: 500px;
+    height: 100px;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    text-align: center;
+    margin: 150px auto;
+    }
+
+    .window h1{
+        color: #f1c40f;
+        padding-top: 3%;
+    }
+
+    .window p{
+        color: black;
+        padding-top: 1%;
+    }
+     
+    .close-button {
+    width: 20px;
+    height: 20px;
+    background: #f1c40f;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    }
+     
+    #popup:target {
+    visibility: visible;
+    }
+
+/* Gaya untuk container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Gaya untuk navbar */
+.navbar {
+    background-color: maroon;
+    color: white;
+    text-align: right; /* Teks di kanan atas */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* Warna teks navbar */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: white; /* Warna teks navbar saat dihover */
+}
+
+/* Gaya untuk header */
+header {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 48px;
+}
+
+
+
+.btn {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #FF6347;
+}
+
+/* Gaya untuk konten utama */
+main {
+    padding: 20px;
+    text-align: center;
+    color: white; /* Warna teks putih */
+}
+
+main h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white; /* Warna teks judul h2 */
+}
+
+/* Gaya untuk galeri foto di "Landing Page" */
+.photo-gallery {
+    text-align: center;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+.gallery-item img {
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: maroon;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#contact {
+    margin-top: 40px;
+}
+
+#contact h2 {
+    color: white; /* Warna teks judul h2 */
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: white; /* Warna teks tautan */
+}
+
+#contact a:hover {
+    color: #FF6347; /* Warna teks tautan saat dihover */
+}
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Light mode styles */
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
