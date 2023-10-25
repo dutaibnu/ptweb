@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Pes - Beranda</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="pt4.css">
+
+
+    <style>
+        /* CSS untuk mengatur tata letak elemen tanggal dan waktu */
+        #tanggal-waktu {
+            float: left; /* Mengapit elemen ke sebelah kiri */
+            margin-right: 510px; /* Memberikan margin kanan agar ada jarak antara elemen lainnya */
+        }
+    </style>
 </head>
 <body>
     
@@ -20,6 +31,8 @@
         <!-- ... (Kode navbar Anda) ... -->
         <div class="container">
             <ul>
+                
+                <li><a href="#tanggal-waktu"><div id="tanggal-waktu" ></div></a></li>
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#contact">Hubungi Saya</a></li>
@@ -146,4 +159,24 @@
     </footer>
 
 </body>
+
+<div id="tanggal-waktu"></div>
+
+<script>
+    // Fungsi untuk memperbarui tampilan tanggal dan waktu setiap detik
+    function updateDateTime() {
+        const dateElement = document.getElementById('tanggal-waktu');
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZoneName: 'short', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+        const now = new Date();
+        const formattedDateTime = now.toLocaleString('id-ID', options);
+        dateElement.textContent = formattedDateTime;
+    }
+
+    // Memanggil fungsi pertama kali
+    updateDateTime();
+
+    // Memperbarui setiap detik
+    setInterval(updateDateTime, 1000);
+</script>
+
 </html>
